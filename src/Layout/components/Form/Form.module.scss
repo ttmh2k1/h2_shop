@@ -1,0 +1,34 @@
+.form {
+  box-shadow: 0 0 0.8rem #bbb;
+  z-index: 1;
+  background-color: white;
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--primary);
+  font-weight: 600;
+  margin-top: 2rem 0;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-device-width: 360px) {
+  .form {
+    width: 32rem !important;
+    max-height: 50rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .form {
+    width: 42rem !important;
+  }
+}

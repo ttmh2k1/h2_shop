@@ -1,0 +1,227 @@
+.slider {
+  max-width: 100%;
+  width: 100%;
+  height: 48rem;
+  position: relative;
+  overflow: hidden;
+  margin-top: 9.8rem;
+
+  .slider-content {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    // transition: transform 1s;
+
+    .slider-item {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      // transition: transform 1s;
+
+      .slider-product-layer {
+        position: absolute;
+        width: 100%;
+        height: 48rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+      }
+
+      .item-details {
+        position: absolute;
+        color: #fff;
+        top: 8rem;
+        left: 25rem;
+        max-width: 40%;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 1;
+
+        h4 {
+          font-size: 2.4rem;
+          letter-spacing: 0.3rem;
+          margin-bottom: 1rem;
+        }
+
+        h2 {
+          font-size: 4rem;
+          letter-spacing: 0.4rem;
+          margin-top: 3rem;
+          margin-bottom: 2rem;
+        }
+
+        .slider-product-description {
+          width: 80%;
+          word-wrap: break-word;
+          letter-spacing: 0.1rem;
+          margin-top: 2rem;
+          line-height: 1.5;
+        }
+      }
+
+      img {
+        width: 100%;
+        max-height: 48rem;
+        object-fit: cover;
+      }
+
+      .slider-product-button {
+        position: absolute;
+        top: 37rem;
+        left: 25rem;
+
+        padding-right: 2rem;
+      }
+    }
+
+    .slider-item-left {
+      left: -100%;
+    }
+
+    .slider-item-right {
+      left: 100%;
+    }
+  }
+
+  .slider-selection {
+    z-index: 2;
+    color: #fff;
+    .slider-navigate-icon {
+      position: absolute;
+      font-size: 6rem;
+      // background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem 0;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(45, 45, 45);
+      }
+    }
+
+    .slider-icon-prev {
+      top: 20rem;
+      left: 5rem;
+    }
+
+    .slider-icon-next {
+      top: 20rem;
+      right: 5rem;
+    }
+  }
+}
+
+.btn-explore {
+  border-color: #fff;
+  color: #fff;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.btn-buy-now {
+  background-color: #fff;
+  color: #000 !important;
+  border-color: #fff;
+
+  &:hover {
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media only screen and (min-device-width: 360px) {
+  .slider-product-description {
+    display: none;
+  }
+
+  .item-details {
+    display: none !important;
+  }
+
+  .slider-product-button {
+    display: none !important;
+  }
+
+  .slider {
+    height: 36rem;
+    margin-top: 5.6rem;
+  }
+
+  .slider-icon-prev {
+    top: 14rem !important;
+    left: 2rem !important;
+  }
+
+  .slider-icon-next {
+    top: 14rem !important;
+    right: 2rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .slider {
+    height: 48rem;
+    margin-top: 9.8rem;
+  }
+  .slider-product-description {
+    display: none;
+  }
+  .item-details {
+    top: 12rem !important;
+    left: 12rem !important;
+    display: block !important;
+  }
+
+  .slider-product-button {
+    top: 32rem !important;
+    left: 12rem !important;
+    display: flex !important;
+  }
+
+  .slider-icon-prev {
+    top: 20rem !important;
+    left: 5rem !important;
+  }
+
+  .slider-icon-next {
+    top: 20rem !important;
+    right: 5rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 1280px) {
+  .slider {
+    height: 48rem;
+    margin-top: 9.8rem;
+  }
+  .slider-product-description {
+    display: block;
+  }
+
+  .item-details {
+    top: 8rem !important;
+    left: 25rem !important;
+    display: block !important;
+  }
+
+  .slider-product-button {
+    top: 37rem !important;
+    left: 25rem !important;
+    display: flex !important;
+  }
+
+  .slider-icon-prev {
+    top: 20rem !important;
+    left: 5rem !important;
+  }
+
+  .slider-icon-next {
+    top: 20rem !important;
+    right: 5rem !important;
+  }
+}

@@ -1,0 +1,124 @@
+.add-comment {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 16rem;
+}
+
+.btn {
+  color: rgb(128, 127, 127);
+  font-size: 2rem;
+  &:hover {
+    text-decoration: none;
+    color: #000;
+    transform: scale(1.05);
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.list-comment {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(244, 242, 242);
+}
+
+.comment {
+  padding: 1rem 6rem;
+  + .comment {
+    border-top: 1px solid #aaa;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0rem 6rem;
+  border-top: 1px solid #aaa;
+}
+
+.list-btn {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+
+  span {
+    border: 1px solid #aaa;
+    background-color: #aaa;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+
+.active {
+  background-color: #fff !important;
+  color: #000;
+  cursor: default !important;
+}
+
+.list-btn,
+.page-btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.background-hidden {
+  display: none;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.185);
+  z-index: 4;
+}
+
+.comment-hidden {
+  display: none;
+}
+
+.create-comment {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 5;
+}
+
+.notify {
+  color: #000;
+  font-size: 2.4rem;
+}
+
+@media only screen and (min-width: 360px) {
+  .comment {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .comment {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .comment {
+    padding: 1rem 6rem;
+  }
+}

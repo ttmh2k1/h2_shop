@@ -1,0 +1,168 @@
+.wrapper {
+  color: #000 !important;
+}
+
+.product {
+  padding: 0 2rem;
+}
+.price {
+  display: flex;
+  gap: 2rem;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 2rem;
+}
+.product,
+.product-details,
+.action,
+.color {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-name {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  width: 40rem;
+}
+
+.price-normal,
+.product-max-price {
+  display: flex;
+  gap: 1rem;
+}
+
+.onSale {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-weight: 600;
+
+  .label {
+    color: rgb(244, 85, 16);
+    font-size: 2rem;
+  }
+
+  .old-price {
+    color: rgb(128, 128, 128);
+    font-size: 2rem;
+    text-decoration: line-through;
+  }
+}
+
+.btn {
+  margin: 0 !important;
+  color: #fff !important;
+}
+
+.description {
+  max-width: 40rem;
+  text-align: justify;
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  border-left: 1px solid #aaa;
+}
+
+.variations {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding-bottom: 1rem;
+
+  user-select: none;
+}
+
+.label {
+  font-size: 2rem;
+  color: #000;
+}
+
+.options {
+  width: 40rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.varia-item {
+  border: 1px solid #aaa;
+  color: rgb(161, 161, 161);
+  width: 16rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--primary);
+    box-shadow: inset 0 0 0 3px var(--essential-base, var(--primary));
+  }
+}
+
+.active {
+  color: #fff !important;
+  box-shadow: inset 0 0 0 3px var(--essential-base, var(--primary)) !important;
+  border: none;
+  background-color: var(--primary) !important;
+}
+
+.action {
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 360px) {
+  .description {
+    display: none;
+  }
+
+  .wrapper {
+    padding: 0 2rem;
+  }
+
+  .product-name {
+    width: 32rem;
+  }
+
+  .options {
+    width: 32rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .description {
+    display: none;
+  }
+  .wrapper {
+    padding: 0 2rem;
+  }
+
+  .product-name {
+    width: 73rem;
+  }
+
+  .options {
+    width: 60rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .description {
+    display: flex;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .product-name {
+    width: 40rem;
+  }
+
+  .options {
+    width: 40rem;
+  }
+}

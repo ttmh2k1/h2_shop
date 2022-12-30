@@ -1,0 +1,53 @@
+.wrapper {
+  width: 100%;
+  min-width: 24rem;
+  position: relative;
+}
+
+.menu-bar {
+  padding: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  padding: 0.2rem 2rem;
+  color: #000 !important;
+  letter-spacing: 0.2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.list-categories,
+.list-filter {
+  color: rgb(125, 124, 124) !important;
+}
+
+.category,
+.filter {
+  padding: 0 2rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  a {
+    color: rgb(125, 124, 124) !important;
+    &:hover {
+      color: #000 !important;
+    }
+  }
+
+  li {
+    padding: 1.2rem 0;
+  }
+}
+
+.active a {
+  color: #000 !important;
+}

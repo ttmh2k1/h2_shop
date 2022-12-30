@@ -1,0 +1,36 @@
+.wrapper {
+  max-width: 100%;
+  position: relative;
+  padding: 0 4rem 0 3.2rem;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  gap: 2.6rem;
+  margin-left: -2rem;
+  padding: 0 1.8rem;
+  transform: translateX(-26%);
+}
+
+.navigate-icon {
+  font-size: 3.2rem;
+  cursor: pointer;
+  color: #121212 !important;
+
+  &:hover {
+    color: #aaa !important;
+  }
+}
+
+.icon-prev {
+  position: absolute;
+  top: 16rem;
+  left: 0rem;
+}
+
+.icon-next {
+  position: absolute;
+  top: 16rem;
+  right: 0rem;
+}

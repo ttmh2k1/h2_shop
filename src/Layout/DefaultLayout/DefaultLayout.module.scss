@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  margin-top: 11.4rem;
+}
+
+.header {
+  z-index: 6;
+}

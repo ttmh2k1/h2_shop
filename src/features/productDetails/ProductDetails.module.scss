@@ -1,0 +1,38 @@
+.wrapper {
+  padding: 5rem 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sub-product {
+  padding: 2rem 8rem;
+}
+
+.new-arrival,
+.best-seller {
+  padding-bottom: 4rem;
+  border-top: 1px solid #aaa;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  color: #000 !important;
+  letter-spacing: 0.2rem;
+}
+
+@media only screen and (min-width: 360px) {
+  .sub-product {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .sub-product {
+    display: block;
+  }
+}

@@ -1,0 +1,43 @@
+.nav-sub {
+  max-width: 100%;
+  display: flex;
+  margin: 0.1rem 0 0 0;
+  padding: 0;
+  justify-content: space-around;
+  background-color: #a97656;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  padding: 0 4rem;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  .categories {
+    box-sizing: border-box;
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+
+    .category {
+      font-size: 1.4rem;
+      padding: 2rem 1rem 0.2rem 1rem;
+    }
+
+    .category-name {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+        color: #aaa;
+      }
+    }
+  }
+}
+
+.sub-nav-hidden {
+  display: none;
+}

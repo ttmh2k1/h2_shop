@@ -1,0 +1,22 @@
+.select {
+  color: black;
+  width: 100%;
+  border: 2px solid #aaaaaa;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  border-radius: 2.4rem;
+  &:focus-within {
+    border: 2px solid #000;
+  }
+  .slt {
+    border: none;
+    width: 100%;
+    outline: none;
+    letter-spacing: 0.15rem;
+    font-weight: 640;
+    color: #aaaaaa;
+    font-size: 18px;
+    .opt {
+      font-weight: 640;
+    }
+  }
+}

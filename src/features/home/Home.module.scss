@@ -1,0 +1,56 @@
+.wrapper {
+  width: 100;
+  position: relative;
+}
+.container {
+  width: 100%;
+  padding: 2rem 8rem;
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.on-sale,
+.best-seller {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #aaa;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  color: #000 !important;
+  letter-spacing: 0.2rem;
+}
+
+@media only screen and (min-device-width: 360px) {
+  .list-product {
+    display: none;
+  }
+
+  .page-product {
+    display: flex;
+  }
+
+  .container {
+    width: 100%;
+    padding: 2rem 4rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .list-product {
+    display: flex;
+  }
+
+  .page-product {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    padding: 2rem 8rem;
+  }
+}

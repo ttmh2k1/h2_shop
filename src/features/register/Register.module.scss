@@ -1,0 +1,94 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 1rem;
+}
+
+.input {
+  margin-top: 0;
+}
+
+.radio-gender {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  color: #000;
+  align-items: center;
+  border: 2px solid #000;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 2rem;
+}
+
+.bottom {
+  margin-top: 0rem;
+}
+
+.sign-in {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-device-width: 360px) {
+  .input {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+
+  .radio-gender {
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .btn-sign-up {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+
+  .btn-sign-in {
+    font-size: 1.4rem;
+    margin-top: 0rem;
+  }
+
+  .bottom {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .input {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
+
+  .radio-gender {
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  .btn-sign-up {
+    font-size: 1.4rem;
+    padding: 10px 28px;
+  }
+
+  .btn-sign-in {
+    font-size: 1.4rem;
+    margin-top: -1rem;
+  }
+
+  .bottom {
+    margin-top: 0rem;
+  }
+}

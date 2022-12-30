@@ -1,0 +1,61 @@
+.wrapper {
+  padding: 4rem 8rem;
+}
+.container {
+  display: flex;
+  gap: 4rem;
+}
+.content {
+  flex: 1;
+}
+
+.menu-fixed {
+  position: fixed;
+  top: 11.4rem;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+@media only screen and (min-width: 360px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-fixed {
+    display: flex;
+    top: 7.1rem;
+  }
+  .wrapper {
+    padding: 4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-fixed {
+    display: flex;
+    top: 11.4rem;
+  }
+
+  .wrapper {
+    padding: 4rem 6.4rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .menu {
+    display: flex;
+  }
+
+  .menu-fixed {
+    display: none;
+  }
+
+  .wrapper {
+    padding: 4rem 8rem;
+  }
+}
